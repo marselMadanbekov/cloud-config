@@ -6,8 +6,6 @@ spring:
     driverClassName: org.postgresql.Driver
   jpa:
     show-sql: true
-    hibernate:
-      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
       ddl-auto: none
     database: POSTGRESQL
     properties:

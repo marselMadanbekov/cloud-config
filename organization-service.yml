@@ -23,7 +23,15 @@ management:
       exposure:
         include: "*"
     enabled-by-default: true
-
+keycloak:
+  realm: spmia-realm
+  auth-server-url: http://172.23.183.18:8080/auth
+  ssl-required: external
+  resource: ostock
+  credentials:
+    secret: baad91c1-4c0f-4561-bee8-4e7f2b9096d0
+  use-resource-role-mappings: true
+  bearer-only: true
 eureka:
   instance:
     prefer-ip-address: true

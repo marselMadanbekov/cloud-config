@@ -23,6 +23,16 @@ management:
         include: '*'
     enable-by-default: true
 
+keycloak:
+  realm: spmia-realm
+  auth-server-url: http://keycloak:8080/auth
+  ssl-required: external
+  resource: ostock
+  credentials:
+    secret: 92d6454f-f28f-489a-9235-ddad8c1cc7ee
+  use-resource-role-mappings: true
+  bearer-only: true
+
 eureka:
   instance:
     prefer-ip-address: true

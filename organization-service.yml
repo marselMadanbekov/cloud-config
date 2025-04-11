@@ -29,7 +29,7 @@ keycloak:
   ssl-required: external
   resource: ostock
   credentials:
-    secret: baad91c1-4c0f-4561-bee8-4e7f2b9096d0
+    secret: d8bafc70-0d14-4088-8544-7930d9618b8e
   use-resource-role-mappings: true
   bearer-only: true
 eureka:

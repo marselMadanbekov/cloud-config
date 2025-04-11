@@ -4,6 +4,9 @@ server:
 spring:
   cloud:
     gateway:
+      filter:
+        remove-request-header:
+          enabled: false
       discovery:
         locator:
           enabled: true

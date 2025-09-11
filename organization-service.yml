@@ -1,4 +1,14 @@
 spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: orgChangeTopic
+          content-type: application/json
+      kafka:
+        binder:
+          zkNodes: kafka
+          brokers: kafka
   jpa:
     hibernate:
       ddl-auto: none
@@ -40,3 +50,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eurekaserver:8070/eureka/
+
+
+
+
